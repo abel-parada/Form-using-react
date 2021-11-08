@@ -1,14 +1,20 @@
 import React from 'react';
 
 const View = (props) => {
+
+    // props is a placeholder. ex: {this.firstname}
     return (
-        <div>
+        <div id="wrapper">
             <h1>This is your input</h1>
-            <p placeholder="Firstname"></p>
-            <p placeholder="Lastname"></p>
-            <p placeholder="Phone Number"></p>
-            <p placeholder="Role"></p>
-            <p placeholder="Message"></p>
+            <div id="list">
+                <div id="lines">
+                    <p>Firstname: {props.firstname}</p>
+                    <p>Lastname: {props.lastname}</p>
+                    <p>Phone Number: {props.phonenumber}</p>
+                    <p>Role: {props.role}</p>
+                    <p>Message: {props.message}</p>
+                </div>
+            </div>
         </div>
     );
 };
