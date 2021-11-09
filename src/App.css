@@ -37,10 +37,16 @@
   }
 }
 
+h1,
+h2 {
+  align-items: center;
+  text-align: center;
+}
+
 #form {
   background-color: rgb(71, 71, 185);
-  display: block;
   padding: 2rem;
+  margin: 0px auto;
 }
 
 label {
@@ -58,7 +64,7 @@ button {
   margin: 20px;
   margin-top: 0px;
   border-radius: 5px;
-  width: 25%;
+  width: 33%;
 }
 
 input[type="submit"] {
@@ -86,9 +92,9 @@ button:hover {
 #wrapper {
   margin: 50px 0;
   background-color: #f5f5f5;
-  width: 600px;
   padding: 0;
   border: solid black 1px;
+  margin: 20px 20px;
 }
 
 #list {
