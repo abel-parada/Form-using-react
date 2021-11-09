@@ -3,7 +3,7 @@ import React from 'react';
 const Form = (props) => {
     return (
         <div>
-            <form id="form">
+            <form id="form" onSubmit={props.submit}>
                 <div>
                     <label htmlFor="firstname">Firstname</label>
                     <input name="firstname" type="text" id="firstname" required onChange={props.change}></input>
@@ -33,7 +33,7 @@ const Form = (props) => {
                     <textarea name="message" type="text" id="message" onChange={props.change}></textarea>
                 </div>
 
-                <button type="submit">Submit</button>
+                <button type="submit">Send</button>
             </form>
         </div>
     );

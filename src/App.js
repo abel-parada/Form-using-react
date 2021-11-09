@@ -11,32 +11,44 @@ class App extends Component {
     firstname : "",
     lastname: "",
     phonenumber:"",
-    role:"",
+    role:"Student",
     message:"",
+    showPopup:false,
   };
-
+  
   inputHandler = (event) => {
+    event.preventDefault();
     this.setState({
       [event.target.name]:event.target.value,
     });
   };
-
+  
+  popupHandler = (event) => {
+    event.preventDefault();
+    this.setState({
+      showPopup:true,
+    });
+  };
+  
   render() {
+    
+    const props = {
+      firstname : this.state.firstname,
+      lastname: this.state.lastname,
+      phonenumber:this.state.phonenumber,
+      role:this.state.role,
+      message:this.state.message,
+      }
+
     return (
       <div>
         <header>
-          <h1>Hello Abel. SHOW ME THE MONEY!</h1>
+          <h1>Hello. 📣 SHOW ME THE MONEY! 📣</h1>
         </header>
         <main>
-        <Form change={this.inputHandler}/>
-        <View 
-          firstname={this.state.firstname}
-          lastname={this.state.lastname}
-          phonenumber={this.state.phonenumber}
-          role={this.state.role}
-          message={this.state.message}
-        />
-        <Popup />
+        <Form change={this.inputHandler} submit={this.popupHandler}/>
+        <View {...props}/>
+        {this.state.showPopup && <Popup {...props} />}
         </main>
       </div>
     );
