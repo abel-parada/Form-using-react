@@ -22,11 +22,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Screenshots
 
-![alt text](/Users/bc-macair034/Documents/React locally/Week02/Screenshot 2021-11-09 at 13.47.53.png)
+![alt text](Form.View.Example.png) "Form View"
 
-![alt text](/Users/bc-macair034/Documents/React locally/Week02/Screenshot 2021-11-09 at 13.47.53.png)
+![alt text](Form-Input-Example.png) "Input text view"
 
-![alt text](/Users/bc-macair034/Documents/React locally/Week02/Screenshot 2021-11-09 at 13.47.53.png)
+![alt text](Popup-Example.png) "Popup view"
 
 ## Sources
 
