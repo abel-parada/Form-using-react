@@ -36,5 +36,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 Abel Parada
 
-- GitHub @abel-parada
+- [GitHub @abel-parada](https://github.com/abel-parada)
 - [LinkedIn](https://www.linkedin.com/in/abelparadamillan/)
