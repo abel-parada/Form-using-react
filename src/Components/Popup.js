@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Popup = ({id, firstname, lastname, phonenumber, role, message}) => {
+const Popup = ({firstname, lastname, phonenumber, role, message, post}) => {
 
     const closeHandler = (event) => {
         event.preventDefault();
@@ -15,8 +15,8 @@ const Popup = ({id, firstname, lastname, phonenumber, role, message}) => {
                 <p>Lastname: {lastname}</p>
                 <p>Phone Number: {phonenumber}</p>
                 <p>Role: {role}</p>
-                <p>Message: {message}</p>
-                <button type="submit" id="reload" onClick={closeHandler}>YES, I am sure</button>
+                <p>Why do you want money?: {message}</p>
+                <button type="submit" id="reload" onClick={post}>YES, I am sure</button>
                 <button type="submit" id="reload2" onClick={closeHandler}>NOPE, don't want to post it</button>                
             </div>
         </div>

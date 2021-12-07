@@ -7,6 +7,10 @@
   pointer-events: none;
 }
 
+body {
+  font-family: "Ubuntu Mono", monospace;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -47,7 +51,7 @@ h2 {
   background-color: rgb(71, 71, 185);
   padding: 2rem;
   margin: 0px auto;
-  width: 100%;
+  width: 75%;
 }
 
 label {
@@ -66,6 +70,8 @@ button {
   margin-top: 0px;
   border-radius: 5px;
   width: 100%;
+  padding: 8px;
+  font-family: "Ubuntu Mono", monospace;
 }
 
 input[type="submit"] {
@@ -182,10 +188,22 @@ p {
   margin: 20px;
   border: solid 1px black;
   background-color: rgb(252, 246, 170);
+  width: 50%;
 }
 
 .formarea {
   display: flex;
   justify-content: space-around;
   background-color: rgb(71, 71, 185);
+}
+
+span {
+  font-family: "Just Another Hand", cursive;
+  font-size: 48px;
+}
+
+.notewrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }

@@ -29,7 +29,7 @@ const Form = ({submit, change}) => {
                 </div>
 
                 <div>
-                    <label htmlFor="message">Message</label>
+                    <label htmlFor="message">Why do you want money?</label>
                     <textarea name="message" type="text" id="message" onChange={change}></textarea>
                 </div>
 

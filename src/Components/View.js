@@ -1,6 +1,6 @@
 import React from 'react';
 
-const View = (props) => {
+const View = ({firstname, lastname, phonenumber, role, message}) => {
 
     // props is a placeholder. ex: {this.firstname}
     return (
@@ -8,11 +8,11 @@ const View = (props) => {
             <h1>This is your input</h1>
             <div id="list">
                 <div id="lines">
-                    <p>Firstname: {props.firstname}</p>
-                    <p>Lastname: {props.lastname}</p>
-                    <p>Phone Number: {props.phonenumber}</p>
-                    <p>Role: {props.role}</p>
-                    <p>Message: {props.message}</p>
+                    <p>Firstname: <span>{firstname}</span></p>
+                    <p>Lastname: <span>{lastname}</span></p>
+                    <p>Phone Number: <span>{phonenumber}</span></p>
+                    <p>Role: <span>{role}</span></p>
+                    <p>Message: <span>{message}</span></p>
                 </div>
             </div>
         </div>
