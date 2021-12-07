@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import Form from './Components/Form.js'
-import View from './Components/View.js'
-import Popup from './Components/Popup.js'
-
+import Form from './Components/Form.js';
+import View from './Components/View.js';
+import Popup from './Components/Popup.js';
+import Notes from './Components/Notes.js';
+import Footer from './Components/Footer.js';
+import axios from 'axios';
 
 class App extends Component {
 
@@ -14,7 +16,16 @@ class App extends Component {
     role:"Student",
     message:"",
     showPopup:false,
+    data:[],
   };
+
+  componentDidMount() {
+    axios.get("http://localhost:3001/notes").then((res)=> {
+      this.setState({data: res.data})
+      console.log(res);
+      console.log(res.data);
+    });
+  }
   
   inputHandler = (event) => {
     event.preventDefault();
@@ -45,11 +56,15 @@ class App extends Component {
         <header>
           <h1>Hello. 📣 SHOW ME THE MONEY! 📣</h1>
         </header>
-        <main>
+        <main className="formarea">
         <Form change={this.inputHandler} submit={this.popupHandler}/>
         <View {...props}/>
         {this.state.showPopup && <Popup {...props} />}
         </main>
+        {this.state.data.map( note => (
+          <Notes {...note}/>// the ... are the spread operator. it literately opens the array and maps the whole thing inside
+          ))}
+        <Footer />
       </div>
     );
   }

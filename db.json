@@ -1,0 +1,29 @@
+{
+    "notes":[
+        {
+            "id":1,
+            "firstname":"Abel",
+            "lastname":"Parada",
+            "phonenumber":1234,
+            "role":"Student",
+            "message": "I am a student"
+          },
+        {
+            "id":2,
+            "firstname":"Levi",
+            "lastname":"Blankers",
+            "phonenumber":2345,
+            "role":"Teacher",
+            "message": "I am a teacher"
+          },
+        {
+            "id":3,
+            "firstname":"Leyma",
+            "lastname":"Feiraco",
+            "phonenumber":9876,
+            "role":"",
+            "message": "I am neither a studen or a teacher"
+          }
+    ]
+
+}
